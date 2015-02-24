@@ -1,0 +1,204 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{article}
+\usepackage{fontspec} 
+\usepackage{setspace}
+%\usepackage[xetex]{graphicx}
+\usepackage{wallpaper}
+\usepackage{color}
+\usepackage{hyperref}
+%\ThisURCornerWallPaper{0.2}{sandiainternal.jpg}
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+\definecolor{mycolor1}{rgb}{0.1, 0.4, 0.3}
+\definecolor{mycolor2}{rgb}{0.1, 0.3, 0.2}
+\definecolor{mycolor3}{rgb}{0.8, 0.7, 0.2}
+\definecolor{mycolor4}{rgb}{0.9, 0.1, 0.4}
+\definecolor{mycolor5}{rgb}{0.7, 0.4, 0.4}
+\definecolor{mycolor6}{rgb}{0.4, 0.7, 0.7}
+\definecolor{hyperlinkcolor}{rgb}{0, 0.3, 0.8}
+
+
+
+% FONTS
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+%\setromanfont [Ligatures={Common}, BoldFont={Adobe Caslon Pro Bold}, ItalicFont={Adobe Caslon Pro Italic}]{Adobe Caslon Pro}
+\setmonofont[Scale=0.8]{Monaco} 
+% ---- CUSTOM AMPERSAND
+%\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro Italic}\selectfont\itshape\&}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\rmfamily\mdseries\upshape\Large}
+\subsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+\subsubsectionfont{\rmfamily\mdseries\upshape\normalsize} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+%\usepackage[dvipdfm, bookmarks, colorlinks, breaklinks, pdftitle={Michael Shaughnessy - vita},pdfauthor={Michael Shaughnessy}]{hyperref}  
+%\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue} 
+
+% DOCUMENT
+\begin{document}
+
+{\LARGE \textbf{Michael Shaughnessy}} \\[1cm]
+1880 Tallac St.\\
+Napa, CA \texttt{94558}
+U.S.A.\\[.2cm]
+Phone: \texttt{530-219-0940}\\
+%email:\href{mailto:mickeyshaughnessy@gmail.com}{mickeyshaughnessy@gmail.com}\\
+%{mickeyshaughnessy@gmail.com}\\
+{\color{hyperlinkcolor}\href{mailto:mickeyshaughnessy@gmail.com}{mickeyshaughnessy@gmail.com} \\ 
+\href{https://www.linkedin.com/in/michaelshaughnessy1}{LinkedIn} - 
+\href{https://github.com/mickeyshaughnessy}{GitHub}}
+
+\section*{\color{mycolor4}\textbf{Skills}}
+
+\onehalfspace {\color{mycolor1}\textbf{\textbullet Data engineering and algorithm design}}\\
+  {\color{mycolor1}\textbf{\textbullet Software development: databases, distributed systems, web}} \\
+    {\color{mycolor1}\textbf{\textbullet Modeling, simulation, and optimization}} \\
+{\color{mycolor1}\textbf{\textbullet Technical communication}}\\ \singlespace
+ \small{\textbf{\emph{Languages \& Software:}} Python, Perl, Linux, SQL, Excel, C++, Matlab, Redis, Git, MongoDB, TeX, VASP, LAMMPS, VMD \\
+
+\section*{\color{mycolor4}\textbf{Experience}}
+
+\noindent
+\years{2014- Present}\textbf{  RTBiQ, Inc. San Francisco:}
+\emph{Data Engineer/ Data Scientist} \newline
+ \textbf{{\color{mycolor2}Designed and implemented real-time bidding control and statistical optimization algorithms for pricing mobile advertising.}} \\ \textbullet \indent {Dynamic control algorithm lowers cost by to 50-100\%, compared to the previous method and replies to up to hundreds of thousands of queries per second with latency less than 150 ms. \\ \textbullet Built a Bayesian machine learning that allows customers to automatically avoid fraudulent impressions and systematically improve KPIs. \\ \textbullet 
+Created QA test harness, including remote test ad exchange, communicating over HTTP. %\\ \textbullet Improved a distributed system for running real-time bidding advertising campaigns, including multiple databases, a web frontend and API, and a dynamically controlled bidder farm.} \\
+\\ \textbullet Built video ad unit capability, allowing customers to upload video advertising creative. Dynamically generated VAST XML bid responses to video auction requests. Integrated the platform with two video advertising exchanges, LiveRail and Vdopia, generating up to tens of thousands of requests per second. \\
+
+\noindent
+\years{2013-2014}\textbf{Synopsys TCAD, Mountain View:} 
+\emph{R\&D Engineer} \newline
+ \textbf{{\color{mycolor2}Defined a methodology for interfacing quantum mechanical calculations with commercial continuum reaction-diffusion simulators.}} \\ \textbullet Built software tool and API using Python and C++ to ingest large scale simulation data and efficiently compute diffusion parameters. \\ \textbullet Used non-linear regression and Monte Carlo simulations to estimate mole-fraction dependent parameters for semiconductor alloys. \\ \textbullet Calculated ab-initio data sets for ternary III-V alloys and dopants - enabled customers to simulate these materials without experimental data. \\ \textbullet Set up a Linux-based distributed compute environment for rapid, parallelized multi-scale calculations. Used VASP, LAMMPS, VMD, C++, Bash and Python scripting. \\
+
+%%\hrule
+\noindent
+\years{2011-2013}\textbf{Sandia National Labs, Livermore:}
+\emph{Postdoctoral Researcher} \newline
+Developed a machine learning tool for molecular dynamics simulations based on \textit{ab-initio} calculations without interatomic potentials or force fields. Predicted contact resistance to carbon nanostructures using multi-scale methods. Simulated transport across grain boundaries in thermoelectric materials and developed a thermoelectric materials aging software package. Initiated and won U.S. Naval Research Lab funding for a multi-year topological insulator device research effort.\\
+
+\years{2009-2011}\textbf{Lawrence Livermore National Lab, Livermore:}
+\emph{Lawrence Scholar}\newline
+Identified new magnetic alloys for permanent magnet and spintronic applications. Utilized tera-scale high-throughput clusters and databases for multi-scale modeling.\\
+
+\years{2004-2011}\textbf{University of California, Davis:} \emph{Research Assistant}\newline
+Calculated properties of spintronic using density functional theory. Investigated topological and quantum mechanical properties of black hole and Euclidean solutions in gravity. Lead laboratory courses in physics and wrote solutions for graduate quantum mechanics courses. \\
+
+\years{2003-2004}\textbf{Musculoskeletal Research Lab, Hershey:} \emph{Student Researcher} \newline
+Created nanostructured surfaces for bone cell growth using plasma etching and polymer spin-coating. Characterized cell response using FTIR spectroscopy and electron microscopy.\\
+
+\years{2002}\textbf{Cornell University Controlled Environment Agriculture, Ithaca: }\emph{Student Researcher} \newline
+Developed a physical model of water diffusion in germinating seeds and built a hydroponic sprouting system.\\
+
+\years{2000-2004}\textbf{Cornell University Physical Sciences Library, Ithaca: }\emph{Library Manager}\newline
+Managed day-to-day library operations and customer service. \\
+
+%\hrule
+\section*{{\color{mycolor4}\textbf{Education}}}
+\noindent
+\years{2004}\textsc{BS}, Biological Engineering, Cornell University, Ithaca\\
+\years{2011}\textsc{PhD}, Physics, University of California, Davis\\
+\indent
+	Thesis: \textit{Electronic and Magnetic Structure in Doped Semiconductors}
+
+
+%\hrule
+\section*{{\color{mycolor4}\textbf{Honors/Clearance}}}
+\noindent
+\years{2011}DOE EERE Postdoctoral Fellowship Awardee \newline
+\years{2009}Lawrence Scholar Fellowship \newline
+\years{2011-2013}DOE L Clearance \newline
+
+\section*{{\color{mycolor4}\textbf{Patents}}}
+\noindent
+Filed 26 September 2014 (Pending) \\
+\textbullet Adaptive Parallelization for Multi-Scale Simulation (14/497681) \\
+\textbullet First Principles Design Automation Tool (PCT/US14/57803) \\
+\textbullet Estimation of Effective Channel Length for FinFETs and Nanowires (PCT/US14/57637) \\
+\textbullet Simulation Scaling with DFT and Non-DFT (14/498458) \\
+\textbullet Iterative Simulation with DFT and Non-DFT (14/498492) \\
+\textbullet Parameter Extraction of DFT (PCT/US14/57840) \\
+\textbullet Characterizing Target Material Properties Based on Properties of Similar Materials (14/497695) \\
+\textbullet Mapping Intermediate Material Properties to Target Properties to Screen Materials (PCT/US14/57707)\\
+
+
+
+
+\section*{{\color{mycolor4}\textbf{Publications}}}
+\noindent
+\years{2008}$\bullet$\ \   J.Y. Lim, M. Shaughnessy, Z. Zhou, H. Noh, E. A. Vogler, and H. J. Donahue.  %\href{http://www.sciencedirect.com/science/article/pii/S0142961207010526}
+{Surface energy effects on osteoblast spatial growth and mineralization.} \emph{Biomaterials} \textbf{29}: 1776-1784\\  
+\years{2009}$\bullet$\ \   M. Shaughnessy, C.Y. Fong, R. Snow, K. Liu, J. Pask, and L.H. Yang. %\href{http://apl.aip.org/resource/1/applab/v95/i2/p022515_s1?isAuthorized=yes}
+{ Origin of Large Moments in Mn$_x$Si$_{1-x}$.}\emph { Appl. Phys. Lett.} \textbf{95}: 022515\\
+\years{    }$\bullet$\ \   C. Y. Fong, M. Shaughnessy, R. Snow, Kai Liu, J. E. Pask, and L. H. Yang. %\href{http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=784711}
+{Physical origin of measured magnetic moment in Mn$_x$Si$_{1-x}$ with x = 0.1\%.} (invited) \emph{Proceedings of SPIE}, \textbf{7398}: 73980J-1\\
+\years{2010}$\bullet$\ \   M. Shaughnessy, C.Y. Fong, L.H. Yang, Ryan Snow, X.S. Chen, and Z.M. Zhiang. %\href{http://prb.aps.org/abstract/PRB/v82/i3/e035202}
+
+{Structural and magnetic properties of single dopants of Mn and Fe for Si-based spintronic materials.} \emph{Phys. Rev. B} \textbf{82}: 035202 \\
+\years{    }$\bullet$\ \   C. Y. Fong, M. Shaughnessy, R, Snow, and L. H. Yang. %\href{http://onlinelibrary.wiley.com/doi/10.1002/pssc.200982696/abstract}
+{Theoretical investigations of defects in a Si-based digital ferromagnetic heterostructure - a spintronic material.} \emph{Physica Status Solidi C}, \textbf{7}: 747\\
+\years{2011}$\bullet$\ \   M. Shaughnessy, Ryan Snow, L. Damewood, and C. Y. Fong. %\href{http://www.hindawi.com/journals/jnm/2011/140805/}
+{Memory and Spin Injection Devices Involving Half Metals.} \emph{Journal of Nanomaterials}, \textbf{2011}: 140805\\
+\years{2012}$\bullet$\ \   S. Dag, M. Shaughnessy, C.Y. Fong, X.D. Zhu, L.H. Yang. % \href{http://www.sciencedirect.com/science/article/pii/S0921452612001901}
+{First principles studies of a Xe atom adsorbed on NB(110) surface.} \emph{Physica B}, \textbf{407}: 2100 \\
+\years{    }$\bullet$\ \   C. Y. Fong, M. Shaughnessy, L. Damewood, and L. H. Yang. %\href{http://www.degruyter.com/view/j/nsmmt.2012.1.issue/nsmmt-2012-0001/nsmmt-2012-0001.xml}
+{Theory, Experiment and Computation of Half Metals for Spintronics: Recent Progress in Si-based Materials.} \emph{Nanoscale Systems: Mathematical Modeling, Theory and Applications},  \textbf{1}: 1-22,  2012. \\
+\years{2013}$\bullet$\ \   M. Shaughnessy, C. Y. Fong, L. Damewood, C. Felser and L. H. Yang. %\href{http://jap.aip.org/resource/1/japiau/v113/i4/p043709_s1}
+{Structural variants and the modified Slater-Pauling curve for transition-metal-based half-Heusler alloys.} \emph{Journal of Applied Physics}, \textbf{113}: 043709 (2013) \\
+\years{    } $\bullet$\ \   A.C. Ford, M. Shaughnessy, B.M. Wong, A. Kane, O.V. Kuznetsov, K.L. Krafcik, W.E. Billups, R.H. Hauge, F. Leonard. %\href{http://iopscience.iop.org/0957-4484/24/10/105202}
+{Physical Removal of Metallic Carbon Nanotubes from Nanotube Network Devices Using a Thermal and Fluidic Process.} \emph{Nanotechnology.} \textbf{24}: 105202. \\
+\years{    }$\bullet$\ \    L.H. Yang, M. Shaughnessy, L. Damewood, C.Y. Fong. %\href{}
+{Half-metallic hole-doped Mn/Si trilayers.} 
+\emph{Jour. of Phys. D.: Appl. Phys.}, \\
+\years{2014}$\bullet$\ \   M. Shaughnessy, J.D Sugar, N. Bartelt, J. Zimmerman. {Energetics and thermodiffusion of Au in Bi$_2$Te$_3$.} Journal of Applied Physics.
+%\years{    } B. Busemeyer, M. Shaughnessy, C.Y. Fong, L.H. Yang and L. Damewood. \href{}{Self consistent Hubbard U modeling of magnetic properties of wurtzite NiO thin films.} In preparation. \\
+%\years{    } M. Shaughnessy, A.C. Ford, R. Jones, C.D. Spataru. \href{}{Realistic carbon nanotube-metal contact configurations.} In preparation. \\
+%\years{    } M. Shaughnessy, C.D. Spataru, D.L Medlin and F. Leonard. \href{}{First principles calculation of thermoelectric transport across twinned grain boundaries.} In preparation. \\
+
+%\subsection*{Talks}
+%\noindent
+%\years{}
+%\ThisLRCornerWallPaper{0.5}{cichlid_on_white.jpg}
+
+%\section*{References}
+%Dr. Reese Jones {rjones@sandia.gov}\\
+%Prof. Ching Yao Fong: {fong@solid.physics.ucdavis.edu }\\
+%Dr. Lin H. Yang: {lyang@llnl.gov}\\
+%\section*{Interests}bike touring, 3d printing, tropical fish keeping, and cooking 
+
+\ThisLRCornerWallPaper{0.5}{vine.jpeg}
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\-  }
+\end{center}
+
+\end{document}
