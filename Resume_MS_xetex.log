@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  17 JUN 2020 13:43
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.8)  7 OCT 2021 11:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -690,9 +690,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 K
-      eywords: AWS, Linux, Python, SQL%, scikit-learn, Spark, Solidity, Web3...
-
+l.95 
+     
 ? 
 Package marginnote Info: Margin note 1.1 is on absolute page 1 on input line 10
 1.
